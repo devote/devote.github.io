@@ -130,8 +130,8 @@
       video.loop = true;
       video.preload = true;
       video.muted = true;
-      video.style.top = 0;
-      video.style.left = 0;
+      video.style.top = '-1000px';
+      video.style.left = '-1000px';
       video.style.position = 'absolute';
 
       if (video.canPlayType('video/mp4') == 'maybe') {
