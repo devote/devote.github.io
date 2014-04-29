@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" src="wakelock.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+    function lockScreen() {
+      if (!lockScreen.lock) {
+        lockScreen.lock = window.navigator.requestWakeLock('screen');
+        document.getElementById('debug').innerHTML = 'You screen is locked';
+      } else {
+        document.getElementById('debug').innerHTML = 'You screen is already locked';
+      }
+    }
+    function unlockScreen() {
+      if (lockScreen.lock) {
+        try {
+          lockScreen.lock.unlock();
+        } catch(_e_) {}
+        lockScreen.lock = null;
+        document.getElementById('debug').innerHTML = 'You screen is unlocked';
+      } else {
+        document.getElementById('debug').innerHTML = 'You screen is already unlocked';
+      }
+    }
+  </script>
+  <button onclick="lockScreen();">Lock your Screen</button>&nbsp;
+  <button onclick="unlockScreen();">UnLock your Screen</button>
+  <div id="debug"></div>
+</body>
+</html>
