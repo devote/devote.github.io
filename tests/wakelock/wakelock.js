@@ -1,5 +1,12 @@
+/**
+ * WakeLock 0.1.0
+ *
+ * @version 0.1.0
+ * @author Copyright 2014, <a href="mailto:spb.piksel@gmail.com">Dmitrii Pakhtinov</a>
+ * Created 04/29/2014
+ */
 (function(w) {
-  return w.navigator.requestWakeLock || !w.document.createElement('video').canPlayType;
+  return w.navigator['requestWakeLock'] || !w.document.createElement('video').canPlayType;
 }(window)) || new function() {
   var mp4Video =
     'AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAAIZnJlZQAAAr9tZGF0' +
@@ -116,13 +123,15 @@
     if (lockScreen.isDocumentReady || document.readyState === "complete") {
       var video = document.createElement('video');
       video.id = "wakeLockVideoContent";
-      video.width = 0;
-      video.height = 0;
+      video.width = 1;
+      video.height = 1;
       //video.controls = "controls";
       video.autoplay = true;
       video.loop = true;
       video.preload = true;
       video.muted = true;
+      video.style.top = 0;
+      video.style.left = 0;
       video.style.position = 'absolute';
 
       if (video.canPlayType('video/mp4') == 'maybe') {
@@ -148,7 +157,7 @@
     }
   };
 
-  window.WakeLock = function WakeLock() {
+  window['WakeLock'] = function WakeLock() {
     throw new TypeError('WakeLock is not a ' + (this instanceof WakeLock ? 'constructor' : 'function'));
   };
 
@@ -171,12 +180,11 @@
     return '[object DOMPrototype]';
   };
 
-  window.navigator.requestWakeLock = function requestWakeLock(topic) {
+  window.navigator['requestWakeLock'] = function requestWakeLock(topic) {
     var WL = function() {
       Object.defineProperty(this, 'topic', {
         enumerable: false,
         configurable: false,
-        extensible: false,
         get: function() {
           return topic;
         }
