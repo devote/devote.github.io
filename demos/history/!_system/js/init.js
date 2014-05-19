@@ -68,4 +68,20 @@ window.$BootStrap.Loader('js/history.js', function() {
 
     loadContent();
   });
+
+  // наш фоновый плеер
+  window.$BootStrap.Loader('js/audiojs/audio.min.js', function() {
+    var div = document.createElement('div');
+    div.className = 'player_box';
+    div.innerHTML = '<audio preload="auto"><source id="default_preload" src="'+ window.$BootStrap.vars.systemPath +'mp3/title.mp3" type="audio/mpeg" /></audio>';
+    document.body.appendChild(div);
+
+    var player = audiojs.createAll({
+      imageLocation: window.$BootStrap.vars.systemPath + "js/audiojs/player-graphics.gif",
+      trackEnded: function(){
+        player[0].play();
+      }
+    });
+    player[0].play();
+  });
 });
