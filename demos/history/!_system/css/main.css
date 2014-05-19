@@ -1,0 +1,193 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Arial";
+	color: #000;
+	background-color: #e0e0e0;
+
+	background: -webkit-gradient(linear, left top, right bottom, from(#c4c4c4), to(#ffffff));
+	background: -webkit-linear-gradient(left top, #c4c4c4, #ffffff);
+	background: -moz-linear-gradient(left top, #c4c4c4, #ffffff);
+	background: -ms-linear-gradient(left top, #c4c4c4, #ffffff);
+	background: -o-linear-gradient(left top, #c4c4c4, #ffffff);
+	background: linear-gradient(left top, #c4c4c4, #ffffff);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#c4c4c4, endColorstr=#ffffff);
+}
+
+html,body {
+	font-size: 14px;
+	font-style: normal;
+	height: 100%;
+	overflow: hidden;
+}
+
+p {
+	margin: 14px 0;
+}
+
+img {
+	border: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border: 0;
+}
+
+table td {
+	padding: 0;
+}
+
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.player_box {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	width: 460px;
+	margin: 0 0 10px -230px;
+}
+
+#main {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+#main_content {
+	position: relative;
+	display: block;
+	width: 900px;
+	min-width: 900px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#dynamic_content {
+}
+
+.ie_top_panel_shadow {
+	background-color: #404040;
+	position: absolute;
+	width: 100%;
+	height: 29px;
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2', MakeShadow='true', ShadowOpacity='0.1');
+}
+.top_panel {
+	position: relative;
+	min-width: 900px;
+	height: 29px;
+	margin: 0 auto;
+	background-color: #404040;
+
+	-moz-border-radius: 0 0 5px 5px;
+	-moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+
+	border-radius: 0 0 5px 5px;
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.top_panel ul {
+}
+
+.top_panel ul li {
+	list-style: none;
+	display: block;
+	float: left;
+	padding: 0 12px;
+}
+
+.top_panel ul li a {
+	white-space: nowrap;
+	position: relative;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 6px 15px;
+	height: 17px;
+	outline: none;
+	background-size: 100% 1px;
+	-moz-background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position: 0 22px;
+}
+
+.top_panel ul li a div.first {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	margin-bottom: 6px;
+	height: 1px;
+	background-color: #404040;
+	display: none;
+}
+
+/* IE menu line gradient */
+.top_panel ul li a div div { height: 1px; background-color: #555; margin: 0 2px; }
+.top_panel ul li a div div div { background-color: #666;margin: 0 3px; }
+.top_panel ul li a div div div div { background-color: #777;margin: 0 3px; }
+.top_panel ul li a div div div div div { background-color: #888;margin: 0 3px; }
+.top_panel ul li a div div div div div div { background-color: #999;margin: 0 3px; }
+.top_panel ul li a div div div div div div div { background-color: #aaa;margin: 0 3px; }
+.top_panel ul li a div div div div div div div div { background-color: #bbb;margin: 0 3px; }
+.top_panel ul li a div div div div div div div div div { background-color: #ccc;margin: 0 3px; }
+.top_panel ul li a div div div div div div div div div div { background-color: #ddd;margin: 0 3px; }
+.top_panel ul li a div div div div div div div div div div div { background-color: #eee;margin: 0 3px; }
+.top_panel ul li a div div div div div div div div div div div div { background-color: #fff;margin: 0 3px; }
+
+.top_panel ul li a:hover {
+	atext-decoration: underline;
+
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#404040), color-stop(50%,#FFFFFF), color-stop(100%,#404040));
+	background-image: -webkit-linear-gradient(left, #404040 0%,#FFFFFF 50%,#404040 100%);
+	background-image: -moz-linear-gradient(left, #404040 0%, #FFFFFF 50%, #404040 100%);
+	background-image: -ms-linear-gradient(left, #404040 0%,#FFFFFF 50%,#404040 100%);
+	background-image: -o-linear-gradient(left, #404040 0%,#FFFFFF 50%,#404040 100%);
+	background-image: linear-gradient(left, #404040 0%,#FFFFFF 50%,#404040 100%);
+
+}
+
+.top_panel ul li a:hover div {
+	display: block;
+}
+
+
+.right_panel {
+	float: right;
+	padding: 0 7px 0 0;
+}
+
+.right_panel a {
+	display: block;
+	background-image: url('../images/_tap.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	margin: 5px 0;
+	width: 18px;
+	height: 19px;
+}
+
+.home_page {
+	margin-top: 20px;
+	background-color: #404040;
+	border-radius: 5px;
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	padding: 7px;
+}
+
+.home_page .list {
+	background-color: #fff;
+	color: #434343;
+	padding: 5px 15px;
+}

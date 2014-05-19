@@ -1,0 +1,18 @@
+{
+  "body": "<div id=\"main_content\"><!--[if lt IE 9]><div class=\"ie_top_panel_shadow\"></div><![endif]--><div class=\"top_panel\"><ul><li><a class=\"ajax\" href=\"home/\">Home</a></li><li><a class=\"ajax\" href=\"demo/\">Demo</a></li><li><a class=\"ajax\" href=\"sources/\">View/Download Sources</a></li><li><a class=\"ajax\" href=\"about/\">About</a></li><li><a class=\"ajax\" href=\"help/\">Help</a></li></ul><div class=\"right_panel\"><a href=\"/\"></a></div></div><div id=\"dynamic_content\"></div></div>",
+  "/home/": {
+    "html": "<div class=\"home_page\"><div class=\"list\"><p>This site under construction. Please visit later to see new changes. Thanks!</p><p></p><p>You can also go to the <a class=\"ajax\" href=\"sources/\">download section</a> and download the latest version of the libraries.</p></div></div>"
+  },
+  "/demo/": {
+    "html":"<div class=\"home_page\"><div class=\"list\"><p><a class=\"external\" href=\"http://spb-piksel.ru/history/\">HTML5 History API demo</a></p></div></div>"
+  },
+  "/sources/": {
+    "html": "<div class=\"home_page\"><div class=\"list\"><p><a href=\"http://code.spb-piksel.ru/?history.latest.zip\">download HTML5 History API library 4.0.4</a></p><p><a href=\"http://code.spb-piksel.ru/?qsa.latest.zip\">download QSA CSS3 Selector Engine 1.3</a></p><p style=\"padding: 10px 0;\"><a href=\"http://code.spb-piksel.ru/site_history.zip\">Download this site to explore files</a></p><p><a class=\"external\" href=\"https://github.com/devote\">Projects in github...</a></p></div></div>"
+  },
+  "/about/": {
+    "html":"<div class=\"home_page\"><div class=\"list\"><p>E-Mail: <a href=\"mailto:spb.piksel@gmail.com\">spb.piksel@gmail.com</a></p><p>Follow me on Twitter <a class=\"external\" href=\"https://twitter.com/DimaPakhtinov\">@DimaPakhtinov</a></p><p>&copy; Pakhtinov Dmitrii 2009-2013 All rights reserved.</a></p></div></div>"
+  },
+  "/help/": {
+    "html":"<div class=\"home_page\"><div class=\"list\"><p>Need help? Communicate with <a class=\"ajax\" href=\"about/\">me</a></p></div></div>"
+  }
+}
