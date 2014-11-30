@@ -1,4 +1,4 @@
-window.$BootStrap.Loader('js/history.js', function() {
+window.$BootStrap.Loader('../../../files/history/history.ielte7.js', function() {
   // перенаправляем при необходимости
   history.redirect(null, window.$BootStrap.vars.baseFolder);
 
