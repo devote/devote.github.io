@@ -6,7 +6,7 @@
     <script type="text/javascript" src="../../files/jquery/jquery-1.11.1.js"></script>
     <script type="text/javascript">
       jQuery(window).on('popstate', function() {
-        document.getElementById('debug').innerHTML += 'return to: ' + window.location.href + '<br />';
+        document.getElementById('debug').innerHTML += 'return to: ' + (history.location || window.location).href + '<br />';
       });
     </script>
   </head>
