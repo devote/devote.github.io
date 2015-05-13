@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <head>
+    <script type="text/javascript" src="../../files/history/history.js"></script>
+    <script type="text/javascript" src="../../files/jquery/jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+      jQuery(window).on('popstate', function() {
+        document.getElementById('debug').innerHTML += 'return to: ' + window.location.href + '<br />';
+      });
+    </script>
+  </head>
+  <body>
+    <button onclick="history.pushState(null, null, 'random-link-' + (new Date()).getTime()); document.getElementById('info').innerHTML='Press a backward/forward button';">push new state</button><span id="info"></span>
+    <div id="debug"></div>
+  </body>
+</html>
